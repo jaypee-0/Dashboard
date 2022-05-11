@@ -1,0 +1,97 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Nanum+Myeongjo&display=swap');
+
+.h2blue {
+    color: #7d2121;
+    font-size: 40px;
+    font-family: 'Avenir Next';
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    text-align: center;
+    width: 75%;
+} 
+.logintext {
+    width: 75%;
+}
+nav {
+    top: 0;
+    left: 4.5rem;
+}
+.loi {
+    border: 2px dotted #7d2121;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+}
+#loginPage {
+    .imglogin {
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+}
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%; 
+    font-style: normal;
+    position: relative;
+    input {
+        border: 2px solid rgba(84, 95, 125, 0.15);;
+        border-radius: 5px;
+        font-family: 'Avenir Next';
+        outline: 0;
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+    p {
+        color: #9f2828;
+        font-size: 14px!important;
+        right: 0px;
+        cursor: pointer;
+    }
+    button {
+        background-color: #9f2828;
+        border-radius: 8px;
+        border: unset;
+        color: white;
+        font-family: 'Avenir Next';
+        font-size: 16px;
+        a {
+            color: inherit;
+            text-decoration: unset;
+        }
+        &:hover{
+            background-color: #9f2828d5;
+            color: rgb(189, 189, 189);
+        }
+    }
+    input:focus,
+    button:active,
+    button:focus
+        {
+    border: 1px solid #9f2828;
+    outline: 0;
+        }
+}
+@media (max-width: 768px) {
+    #loginPage {
+        .h2blue {
+            width: 100%;
+        }
+        #loginForm {
+            width: 100%;
+            margin: auto 0;
+        }
+        h2, p {
+            text-align: center;
+        }
+        .container {
+            justify-content: center;
+        }
+    }    
+} 
