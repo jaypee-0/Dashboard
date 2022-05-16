@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState }from "react";
 import company from '../Assets/company.jpg';
-//import logo from '../assets/icon.svg';
-//import banner from '../assets/banner.svg';
 
 const Login = () => {
 
